@@ -3,16 +3,16 @@ export class Celular {
     marca: string;
     modelo: string;
     precio: number;
-    almacenamiento: string;
-    ram: string;
+    almacenamiento: number;
+    ram: number;
   
     constructor(
       id: number,
       marca: string,
       modelo: string,
       precio: number,
-      almacenamiento: string,
-      ram: string
+      almacenamiento: number,
+      ram: number
     ) {
       this.id = id;
       this.marca = marca;

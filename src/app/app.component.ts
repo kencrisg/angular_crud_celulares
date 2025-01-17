@@ -10,5 +10,5 @@ import { ConsultComponent } from './consult/consult.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'celulares-app';
+  title = 'Gestión de Celulare';
 }

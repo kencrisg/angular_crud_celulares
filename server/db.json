@@ -1,29 +1,36 @@
 {
-    "celulares": [
-      {
-        "id": 1,
-        "marca": "Samsung",
-        "modelo": "Galaxy S23",
-        "precio": 799,
-        "almacenamiento": "128GB",
-        "ram": "8GB"
-      },
-      {
-        "id": 2,
-        "marca": "Apple",
-        "modelo": "iPhone 14",
-        "precio": 999,
-        "almacenamiento": "256GB",
-        "ram": "6GB"
-      },
-      {
-        "id": 3,
-        "marca": "Xiaomi",
-        "modelo": "Redmi Note 12",
-        "precio": 249,
-        "almacenamiento": "128GB",
-        "ram": "6GB"
-      }
-    ]
-  }
-  
+  "celulares": [
+    {
+      "id": "1",
+      "marca": "Samsung",
+      "modelo": "Galaxy S23",
+      "precio": 799,
+      "almacenamiento": 128,
+      "ram": 8
+    },
+    {
+      "id": "2",
+      "marca": "Apple",
+      "modelo": "iPhone 14",
+      "precio": 999,
+      "almacenamiento": 256,
+      "ram": 6
+    },
+    {
+      "id": "3",
+      "marca": "Xiaomi",
+      "modelo": "Redmi Note 12",
+      "precio": 249,
+      "almacenamiento": 128,
+      "ram": 6
+    },
+    {
+      "id": "0",
+      "marca": "as",
+      "modelo": "ss",
+      "precio": 111,
+      "almacenamiento": 11,
+      "ram": 11
+    }
+  ]
+}
