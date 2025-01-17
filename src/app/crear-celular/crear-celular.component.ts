@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./crear-celular.component.css']
 })
 export class CrearCelularComponent {
-  celular: Celular = new Celular(0, '', '', 0, '', '');
+  celular: Celular = new Celular(0, '', '', 0, 0, 0);
 
   constructor(private apiService: RestApiService, private router: Router) {}
 

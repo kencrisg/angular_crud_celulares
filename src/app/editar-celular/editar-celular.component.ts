@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./editar-celular.component.css']
 })
 export class EditarCelularComponent implements OnInit {
-  celular: Celular = new Celular(0, '', '', 0, '', '');
+  celular: Celular = new Celular(0, '', '', 0, 0, 0);
 
   constructor(
     private apiService: RestApiService,
