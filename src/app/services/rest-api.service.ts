@@ -40,7 +40,7 @@ export class RestApiService {
   }
 
   // GET: Obtener un celular por ID
-  getCelularById(id: number): Observable<Celular> {
+  getCelularById(id: string): Observable<Celular> {
     return this.http.get<Celular>(`${this.apiURL}/celulares/${id}`)
       .pipe(
         retry(1),
@@ -57,7 +57,7 @@ export class RestApiService {
   }
 
   // PUT: Actualizar un celular
-  updateCelular(id: number, celular: Celular): Observable<Celular> {
+  updateCelular(id: string, celular: Celular): Observable<Celular> {
     return this.http.put<Celular>(`${this.apiURL}/celulares/${id}`, JSON.stringify(celular), this.httpOptions)
       .pipe(
         catchError(this.handleError)
@@ -65,7 +65,7 @@ export class RestApiService {
   }
 
   // DELETE: Eliminar un celular
-  deleteCelular(id: number): Observable<void> {
+  deleteCelular(id: string): Observable<void> {
     return this.http.delete<void>(`${this.apiURL}/celulares/${id}`, this.httpOptions)
       .pipe(
         catchError(this.handleError)

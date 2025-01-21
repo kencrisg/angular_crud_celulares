@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./editar-celular.component.css']
 })
 export class EditarCelularComponent implements OnInit {
-  celular: Celular = new Celular(0, '', '', 0, 0, 0);
+  celular: Celular = new Celular("", '', '', 0, 0, 0);
 
   constructor(
     private apiService: RestApiService,
@@ -22,7 +22,7 @@ export class EditarCelularComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
+    const id = this.route.snapshot.paramMap.get('id') || '';
     this.apiService.getCelularById(id).subscribe((data: Celular) => {
       this.celular = data;
     });

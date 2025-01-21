@@ -23,7 +23,7 @@ export class ConsultComponent {
     });
   }
 
-  eliminarCelular(id: number) {
+  eliminarCelular(id: string) {
     if (confirm('¿Estás seguro de eliminar este celular?')) {
       this.restApi.deleteCelular(id).subscribe(() => {
         this.celulares = this.celulares.filter((c) => c.id !== id);

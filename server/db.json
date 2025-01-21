@@ -23,14 +23,6 @@
       "precio": 249,
       "almacenamiento": 128,
       "ram": 6
-    },
-    {
-      "id": "0",
-      "marca": "as",
-      "modelo": "ss",
-      "precio": 111,
-      "almacenamiento": 11,
-      "ram": 11
     }
   ]
 }

@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./crear-celular.component.css']
 })
 export class CrearCelularComponent {
-  celular: Celular = new Celular(0, '', '', 0, 0, 0);
+  celular: Celular = new Celular("", '', '', 0, 0, 0);
 
   constructor(private apiService: RestApiService, private router: Router) {}
 
@@ -22,8 +22,9 @@ export class CrearCelularComponent {
     this.apiService.getCelulares().subscribe({
       next: (celulares: Celular[]) => {
         // Calcular el próximo ID
-        const maxId = celulares.length > 0 ? Math.max(...celulares.map(c => c.id)) : 0;
-        const nuevoCelular = { ...this.celular, id: maxId + 1 };
+        const maxId = celulares.length + 1;
+        
+        const nuevoCelular = { ...this.celular, id: (maxId + 1).toString() };
   
         // Crear el nuevo celular con el ID asignado
         this.apiService.createCelular(nuevoCelular).subscribe({

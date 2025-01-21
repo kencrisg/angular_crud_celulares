@@ -1,5 +1,5 @@
 export class Celular {
-    id: number;
+    id: string;
     marca: string;
     modelo: string;
     precio: number;
@@ -7,7 +7,7 @@ export class Celular {
     ram: number;
   
     constructor(
-      id: number,
+      id: string,
       marca: string,
       modelo: string,
       precio: number,
